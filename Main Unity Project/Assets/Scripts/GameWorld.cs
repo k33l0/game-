@@ -17,6 +17,7 @@ public class GameWorld : MonoBehaviour {
     {
         Vector3 position = new Vector3(x, y, 0f);
         GameObject tileInstance = Instantiate(Resources.Load("Prefabs/grey flagstones 2"), position, Quaternion.identity) as GameObject;
+
         tileInstance.transform.parent = tileHolder.transform;
     }
 
