@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Player : MonoBehaviour {
 
-    public float speed = 1.0f;
+    public float speed = 0.15f;
     public float health = 5.0f;
     private Rigidbody2D phys;
     private bool flipped = false;
@@ -88,7 +88,7 @@ public class Player : MonoBehaviour {
             Destroy(gameObject);
     }
     // Update is called once per frame
-    void FixedUpdate () {
+    void FixedUpdate() {
         keyboardMovement();
         //tabletMovement();
     }

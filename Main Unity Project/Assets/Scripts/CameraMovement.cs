@@ -20,7 +20,7 @@ public class CameraMovement : MonoBehaviour {
         
         float x = Screen.width;
         float y = Screen.height;
-        float Size = 2 * (x / (((x / y) * 2) * 64));
+        float Size = 2 * (x / (((x / y) * 2) * 256));
         Camera.main.orthographicSize = Size;
     }   
 	void Start () {

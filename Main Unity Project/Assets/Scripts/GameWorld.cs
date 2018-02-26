@@ -28,8 +28,10 @@ public class GameWorld : MonoBehaviour {
     void Start () {
         tileHolder = new GameObject("TileHolder");
         RoomGeneration();
-		
-	}
+        GameObject Player = Instantiate(Resources.Load("Prefabs/Player"), new Vector3(0, 0, 0f), Quaternion.identity) as GameObject;
+
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
